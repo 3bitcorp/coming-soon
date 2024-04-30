@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpool Share - Coming Soon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* A subtle grey background color */
+        }
+
+        .logo {
+            width: 200px;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #333; /* Darker color for better contrast */
+            text-shadow: 1px 1px 2px #fff; /* Subtle text shadow for depth */
+        }
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #666; /* Medium grey for paragraph text */
+        }
+
+        svg {
+            animation: rotate 4s linear infinite; /* Rotating the SVG */
+            transform-origin: 50% 50%; /* Setting the origin for rotation */
+            transition: transform 0.3s ease-in-out; /* Adding smooth transitions */
+        }
+
+        svg:hover {
+            transform: scale(1.05); /* Slight scaling on hover */
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<h1>Coming Soon...</h1>
+<svg
+        width="200"
+        height="200"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <!-- Group containing the rotating logo -->
+    <g style="animation: rotate 4s linear infinite; transform-origin: 50% 50%;">
+        <!-- Hypothetical car logo, represented with a simple path -->
+        <path
+                d="M30,60 C40,50 60,50 70,60 L70,70 L30,70 Z"
+                fill="#3498db"
+        />
+        <!-- Car wheels -->
+        <circle
+                cx="40"
+                cy="70"
+                r="5"
+                fill="#000"
+        />
+        <circle
+                cx="60"
+                cy="70"
+                r="5"
+                fill="#000"
+        />
+    </g>
+
+    <!-- Text for the company name, centered below the logo -->
+    <text
+            x="50"
+            y="90"
+            text-anchor="middle"
+            font-family="Arial, sans-serif"
+            font-size="12"
+            fill="#333"
+    >
+        HopWhip
+    </text>
+</svg>
+
+<p>Our new HopWhip app is under development. Stay tuned for updates and get your whip!</p>
+</body>
+</html>
