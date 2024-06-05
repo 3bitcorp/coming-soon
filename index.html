@@ -57,6 +57,34 @@
         }
 
     </style>
+    <script>
+(function () {
+  // Create a script tag for loading the library
+  var script = document.createElement("script");
+
+  // Initialize the Web-SDK at the onLoad event of the script tag above so it will be called when the library is loaded.
+  script.onload = () => {
+    window.GrafanaFaroWebSdk.initializeFaro({
+      // Mandatory, the URL of the Grafana Cloud collector with embedded application key.
+      url: 'https://faro-collector-prod-us-east-0.grafana.net/collect/7a7ded870a8f7e8efdb52e99f66ffcbc',
+
+      // Mandatory, the identification label(s) of your application
+      app: {
+        name: 'Hopwhip',
+        version: "1.0.0",
+      },
+      
+    });
+  };
+
+  // Set the source of the script tag to the CDN
+  script.src =
+    "https://unpkg.com/@grafana/faro-web-sdk@^1.4.0/dist/bundle/faro-web-sdk.iife.js";
+
+  // Append the script tag to the head of the HTML page
+  document.head.appendChild(script);
+})();
+</script>
 </head>
 <body>
 <h1>Coming Soon...</h1>
